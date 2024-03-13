@@ -49,15 +49,15 @@ Esta solicitud recuperará información sobre el miembro con el ID "xyz789".<br>
 Para consumir la API de Bandas y Miembros utilizando GraphQL, primero necesitaremos definir un esquema GraphQL que describa los tipos de datos disponibles en la API y las consultas y mutaciones que se pueden realizar. Luego, utilizaremos Apollo Client para enviar consultas y mutaciones GraphQL desde nuestro cliente.
 ___________________________________________________________________________________________________________________________________________________________________________________________
 ### Instrucciones para Apollo Studio Sandbox Explorer:
-Inicia tu servidor GraphQL local: Asegúrate de que tu servidor GraphQL esté en funcionamiento y esté escuchando en http://localhost:4000/graphql.
+• Inicia tu servidor GraphQL local: Asegúrate de que tu servidor GraphQL esté en funcionamiento y esté escuchando en http://localhost:4000/graphql.
 
-Abre Apollo Studio Sandbox Explorer: Abre tu navegador web y ve a la siguiente URL: https://studio.apollographql.com/sandbox/explorer.
+• Abre Apollo Studio Sandbox Explorer: Abre tu navegador web y ve a la siguiente URL: https://studio.apollographql.com/sandbox/explorer.
 
-Configura la URL del servidor GraphQL local: En el campo de texto en la parte superior izquierda del Sandbox Explorer, escribe la URL de tu servidor GraphQL local: http://localhost:4000/graphql.
+• Configura la URL del servidor GraphQL local: En el campo de texto en la parte superior izquierda del Sandbox Explorer, escribe la URL de tu servidor GraphQL local: http://localhost:4000/graphql.
 
-Explora y prueba tu API GraphQL: Una vez que hayas configurado la URL del servidor GraphQL local, podrás explorar y probar consultas y mutaciones GraphQL en tu API local directamente desde Apollo Studio Sandbox Explorer. Puedes enviar consultas y mutaciones, y ver las respuestas en tiempo real.
+• Explora y prueba tu API GraphQL: Una vez que hayas configurado la URL del servidor GraphQL local, podrás explorar y probar consultas y mutaciones GraphQL en tu API local directamente desde Apollo Studio Sandbox Explorer. Puedes enviar consultas y mutaciones, y ver las respuestas en tiempo real.
 
-Asegúrate de que tu programa esté en ejecución: Es importante que tu programa, en este caso tu servidor GraphQL, esté en ejecución para que Apollo Studio Sandbox Explorer pueda interactuar con él de manera efectiva.
+• Asegúrate de que tu programa esté en ejecución: Es importante que tu programa, en este caso tu servidor GraphQL, esté en ejecución para que Apollo Studio Sandbox Explorer pueda interactuar con él de manera efectiva.
 ___________________________________________________________________________________________________________________________________________________________________________________________
 ### • Configurar Apollo Client:
 Utilizaremos Apollo Client para realizar solicitudes GraphQL desde nuestro cliente.
