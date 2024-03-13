@@ -52,6 +52,23 @@ Utilizaremos Apollo Client para realizar solicitudes GraphQL desde nuestro clien
 Configuraremos Apollo Client con la URL de la API de Bandas y Miembros.
 ### Definir Queries y Mutations:
 
+### Queries
+Acontinuacion se presentara una descripción breve de las queries definidas en el esquema GraphQL:
+
+getAllBands:
+Descripción: Retorna una lista de todas las bandas disponibles con sus respectivos detalles, incluyendo los miembros asociados a cada banda, si los hay.
+
+getBandByID:
+Descripción: Retorna los detalles de una banda específica identificada por su ID. Incluye información sobre la banda y los miembros asociados, si los hay.
+
+getAllMembers:
+Descripción: Retorna una lista de todos los miembros registrados en la API, incluyendo detalles como nombre, apellido, edad, y número de teléfono.
+
+getMemberByID:
+Descripción: Retorna los detalles de un miembro específico identificado por su ID, incluyendo información sobre la banda a la que pertenece, si es aplicable.
+Estas queries permiten a los clientes obtener información sobre las bandas y los miembros disponibles en la API de acuerdo a diferentes criterios de búsqueda.
+___________________________________________________________________________________________________________________________________________________________________________________________
+
 
 
 
