@@ -45,6 +45,47 @@ Por ejemplo, si el ID del miembro es "xyz789", la URL sería:<br>
 •	Ruta: https://taller-api.vercel.app/member/id/xyz789<br> 
 Esta solicitud recuperará información sobre el miembro con el ID "xyz789".<br>
 
+## 2.  Consumo de la API:
+Para consumir la API de Bandas y Miembros utilizando GraphQL, primero necesitaremos definir un esquema GraphQL que describa los tipos de datos disponibles en la API y las consultas y mutaciones que se pueden realizar. Luego, utilizaremos Apollo Client para enviar consultas y mutaciones GraphQL desde nuestro cliente.
+___________________________________________________________________________________________________________________________________________________________________________________________
+### Instrucciones para Apollo Studio Sandbox Explorer:
+Inicia tu servidor GraphQL local: Asegúrate de que tu servidor GraphQL esté en funcionamiento y esté escuchando en http://localhost:4000/graphql.
+
+Abre Apollo Studio Sandbox Explorer: Abre tu navegador web y ve a la siguiente URL: https://studio.apollographql.com/sandbox/explorer.
+
+Configura la URL del servidor GraphQL local: En el campo de texto en la parte superior izquierda del Sandbox Explorer, escribe la URL de tu servidor GraphQL local: http://localhost:4000/graphql.
+
+Explora y prueba tu API GraphQL: Una vez que hayas configurado la URL del servidor GraphQL local, podrás explorar y probar consultas y mutaciones GraphQL en tu API local directamente desde Apollo Studio Sandbox Explorer. Puedes enviar consultas y mutaciones, y ver las respuestas en tiempo real.
+
+Asegúrate de que tu programa esté en ejecución: Es importante que tu programa, en este caso tu servidor GraphQL, esté en ejecución para que Apollo Studio Sandbox Explorer pueda interactuar con él de manera efectiva.
+___________________________________________________________________________________________________________________________________________________________________________________________
+### • Configurar Apollo Client:
+Utilizaremos Apollo Client para realizar solicitudes GraphQL desde nuestro cliente.
+Configuraremos Apollo Client con la URL de la API de Bandas y Miembros.
+___________________________________________________________________________________________________________________________________________________________________________________________
+### • Definir Queries y Mutations:
+
+### Queries
+Acontinuacion se presentara una descripción breve de las queries definidas en el esquema GraphQL:
+
+getAllBands:
+Descripción: Retorna una lista de todas las bandas disponibles con sus respectivos detalles, incluyendo los miembros asociados a cada banda, si los hay.
+
+getBandByID:
+Descripción: Retorna los detalles de una banda específica identificada por su ID. Incluye información sobre la banda y los miembros asociados, si los hay.
+
+getAllMembers:
+Descripción: Retorna una lista de todos los miembros registrados en la API, incluyendo detalles como nombre, apellido, edad, y número de teléfono.
+
+getMemberByID:
+Descripción: Retorna los detalles de un miembro específico identificado por su ID, incluyendo información sobre la banda a la que pertenece, si es aplicable.
+Estas queries permiten a los clientes obtener información sobre las bandas y los miembros disponibles en la API de acuerdo a diferentes criterios de búsqueda.
+
+### Mutations:
+Acontinuacion se presentara una descripción breve de las mutations definidas en el esquema GraphQL:
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+
 
 
  
