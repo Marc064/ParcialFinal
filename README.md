@@ -1,4 +1,4 @@
-``# ParcialFinal
+# ParcialFinal
 ## 1.	Documentación de la API:
 
 ### Introducción a la API de Bandas y Miembros
