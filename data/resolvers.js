@@ -125,6 +125,25 @@ const updateBand = (id, band) => {
         });
 }
 
+const createMember = (id, member) => {
+    return fetch(`(https://taller-api.vercel.app/member/${id}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: JSON.stringify(member),
+    })
+        .then((respuesta) => respuesta.json())
+        .then((result) => {
+            return result.data;
+        })
+        .catch((error) => {
+            console.error("Error fetching bands:", error);
+            throw error;
+        });
+}
+
 
 
 const resolvers = {
@@ -179,7 +198,21 @@ const resolvers = {
             const existBand = await findBandId(args.id)
             const band = await deleteBand(existBand._id)
             return band
-        }
+        },
+
+        createMember: async (_, args) => {
+            const band = await findBandId(args.band)
+            const member = {
+                "id": args.id,
+                "name": args.name,
+                "lastname": args.lastname,
+                "age": args.age,
+                "phone": args.phone
+            }
+            console.log(member);
+            const Member = await createMember(String(band._id), member);
+            return Member
+        },
 
     }
 }
