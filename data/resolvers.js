@@ -88,6 +88,24 @@ const createBand = (band) => {
         });
 }
 
+const deleteBand = (id) => {
+    return fetch(`https://taller-api.vercel.app/band/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        }
+    })
+        .then((respuesta) => respuesta.json())
+        .then((result) => {
+            return result.data;
+        })
+        .catch((error) => {
+            console.error("Error fetching bands:", error);
+            throw error;
+        });
+}
+
 const updateBand = (id, band) => {
     return fetch(`https://taller-api.vercel.app/band/${id}`, {
         method: "PUT",
@@ -153,10 +171,16 @@ const resolvers = {
                 "genre": args.genre != null ? args.genre : existBand.genre,
                 "country": args.country != null ? args.country : existBand.country
             }
-            console.log(existBand);
             const Band = await updateBand(existBand._id, band)
             return Band
+        },
+
+        deleteBand: async (_, args) => {
+            const existBand = await findBandId(args.id)
+            const band = await deleteBand(existBand._id)
+            return band
         }
+
     }
 }
 

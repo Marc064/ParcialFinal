@@ -19,7 +19,7 @@ async function start() {
 
     apolloServer.applyMiddleware({ app });
 
-    app.set("PORT", process.env.PORT || 4000);
+    app.set("PORT", 4000);
     app.listen(app.get("PORT"), () => console.log(`Server listening on port ${app.get("PORT")}`));
 }
 
