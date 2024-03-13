@@ -69,6 +69,9 @@ Descripción: Retorna una lista de todos los miembros registrados en la API, inc
 getMemberByID:
 Descripción: Retorna los detalles de un miembro específico identificado por su ID, incluyendo información sobre la banda a la que pertenece, si es aplicable.
 Estas queries permiten a los clientes obtener información sobre las bandas y los miembros disponibles en la API de acuerdo a diferentes criterios de búsqueda.
+
+### Mutations:
+Acontinuacion se presentara una descripción breve de las mutations definidas en el esquema GraphQL:
 ___________________________________________________________________________________________________________________________________________________________________________________________
 
 
