@@ -1,4 +1,4 @@
-# ParcialFinal
+``# ParcialFinal
 ## 1.	Documentación de la API:
 
 ### Introducción a la API de Bandas y Miembros
@@ -23,9 +23,9 @@ Para acceder a la información sobre las bandas, los usuarios pueden enviar soli
 Esta solicitud recuperará todos los datos sobre las bandas disponibles en la API.
 ___________________________________________________________________________________________________________________________________________________________________________________________
 Para acceder a la información sobre los miembros de una banda en particular, los usuarios pueden enviar solicitudes HTTP a la siguiente URL, reemplazando: id con el ID de la banda específica:<br>
-•	Ruta: https://taller-api.vercel.app/band/:id <br>
+•	Ruta: https://taller-api.vercel.app/band/id/:id <br>
 Por ejemplo, si el ID de la banda es "abc123", la URL sería: <br>
-•	Ruta: https://taller-api.vercel.app/band/abc123 <br>
+•	Ruta: https://taller-api.vercel.app/band/id/abc123 <br>
 Esta solicitud recuperará información sobre la banda con el ID "abc123", incluidos los detalles de sus miembros.
 ___________________________________________________________________________________________________________________________________________________________________________________________
 ### Member:
@@ -34,9 +34,9 @@ Para acceder a la información sobre los miembros en general, los usuarios puede
 Esta solicitud recuperará todos los datos sobre los miembros disponibles en la API.<br>
 ___________________________________________________________________________________________________________________________________________________________________________________________
 Para acceder a la información sobre un miembro en particular, los usuarios pueden enviar solicitudes HTTP a la siguiente URL, reemplazando: id con el ID del miembro específico:<br>
-•	Ruta: https://taller-api.vercel.app/member/:id <br>
+•	Ruta: https://taller-api.vercel.app/member/id/:id <br>
 Por ejemplo, si el ID del miembro es "xyz789", la URL sería:<br>
-•	Ruta: https://taller-api.vercel.app/member/xyz789<br> 
+•	Ruta: https://taller-api.vercel.app/member/id/xyz789<br> 
 Esta solicitud recuperará información sobre el miembro con el ID "xyz789".<br>
 
 
