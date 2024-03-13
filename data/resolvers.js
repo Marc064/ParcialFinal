@@ -1,26 +1,29 @@
 const findAllBands = () => {
-    fetch("https://taller-api.vercel.app/band", {
-        method: "POST",
+    return fetch("https://taller-api.vercel.app/band", {
+        method: "GET",
         headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          query,
-        }),
-      })
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        }
+    })
         .then((respuesta) => respuesta.json())
-        .then((result)=>{
-            result.data
+        .then((result) => {
+            console.log(result);
+            return result.data;
         })
-    };   
+        .catch((error) => {
+            console.error("Error fetching bands:", error);
+            throw error;
+        });
+};
+
 const resolvers = {
     Query: {
         getAllBands: async () => {
             const band = await findAllBands()
             return band;
         },
-        
+
     },
 }
 
