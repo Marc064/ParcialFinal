@@ -24,6 +24,45 @@ const typeDefs = gql`
     getMemberByID(id: ID!): Member
   }
 
+
+  type Mutation {
+    createBand(
+      id: ID!
+      name: String!
+      genre: String!
+      country: String!
+    ): Band
+  
+    deleteBand(id: ID!): Band
+  
+    updateBand(
+      id: ID!
+      name: String
+      genre: String
+      country: String
+      members: [ID] 
+    ): Band
+  
+    createMember(
+      id: ID!
+      name: String!
+      lastname: String!
+      age: Int!
+      phone: String!
+      band: Int!
+    ): Member
+  
+    deleteMember(id: ID!): Member
+    updateMember(
+      id: ID!
+      name: String
+      lastname: String
+      age: Int
+      phone: String
+      band: Int
+    ): Member
+  }
+  
   
 `;
 
