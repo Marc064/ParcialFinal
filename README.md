@@ -45,6 +45,14 @@ Por ejemplo, si el ID del miembro es "xyz789", la URL sería:<br>
 •	Ruta: https://taller-api.vercel.app/member/id/xyz789<br> 
 Esta solicitud recuperará información sobre el miembro con el ID "xyz789".<br>
 
+## 2.  Consumo de la API:
+Para consumir la API de Bandas y Miembros utilizando GraphQL, primero necesitaremos definir un esquema GraphQL que describa los tipos de datos disponibles en la API y las consultas y mutaciones que se pueden realizar. Luego, utilizaremos Apollo Client para enviar consultas y mutaciones GraphQL desde nuestro cliente.
+### Configurar Apollo Client:
+Utilizaremos Apollo Client para realizar solicitudes GraphQL desde nuestro cliente.
+Configuraremos Apollo Client con la URL de la API de Bandas y Miembros.
+### Definir Queries y Mutations:
+
+
 
 
  
