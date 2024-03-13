@@ -83,6 +83,30 @@ Estas queries permiten a los clientes obtener información sobre las bandas y lo
 
 ### Mutations:
 Acontinuacion se presentara una descripción breve de las mutations definidas en el esquema GraphQL:
+
+createBand:<br>
+Descripción: Crea una nueva banda con los detalles proporcionados, incluyendo ID, nombre, género y país.
+Argumentos:<br>
+id: ID único de la banda.<br>
+name: Nombre de la banda.<br>
+genre: Género musical de la banda.<br>
+country: País de origen de la banda.<br>
+Retorna: Los detalles de la banda creada.<br>
+
+updateBand:<br>
+Descripción: Actualiza los detalles de una banda existente identificada por su ID, con la opción de modificar el nombre, género y país de la banda.
+Argumentos:<br>
+id: ID único de la banda que se desea actualizar.<br>
+name: (Opcional) Nuevo nombre de la banda. Si no se proporciona, se mantendrá el nombre existente.<br>
+genre: (Opcional) Nuevo género musical de la banda. Si no se proporciona, se mantendrá el género existente.<br>
+country: (Opcional) Nuevo país de origen de la banda. Si no se proporciona, se mantendrá el país existente.<br>
+Retorna: Los detalles de la banda actualizada.<br>
+
+deleteBand:<br>
+Descripción: Elimina una banda existente identificada por su ID, junto con todos sus datos asociados.
+Argumentos:<br>
+id: ID único de la banda que se desea eliminar.<br>
+Retorna: Los detalles de la banda eliminada.<br>
 ___________________________________________________________________________________________________________________________________________________________________________________________
 
 
