@@ -47,10 +47,12 @@ Esta solicitud recuperará información sobre el miembro con el ID "xyz789".<br>
 
 ## 2.  Consumo de la API:
 Para consumir la API de Bandas y Miembros utilizando GraphQL, primero necesitaremos definir un esquema GraphQL que describa los tipos de datos disponibles en la API y las consultas y mutaciones que se pueden realizar. Luego, utilizaremos Apollo Client para enviar consultas y mutaciones GraphQL desde nuestro cliente.
-### Configurar Apollo Client:
+___________________________________________________________________________________________________________________________________________________________________________________________
+### • Configurar Apollo Client:
 Utilizaremos Apollo Client para realizar solicitudes GraphQL desde nuestro cliente.
 Configuraremos Apollo Client con la URL de la API de Bandas y Miembros.
-### Definir Queries y Mutations:
+___________________________________________________________________________________________________________________________________________________________________________________________
+### • Definir Queries y Mutations:
 
 ### Queries
 Acontinuacion se presentara una descripción breve de las queries definidas en el esquema GraphQL:
