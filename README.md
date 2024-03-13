@@ -1,9 +1,9 @@
 # ParcialFinal
 ## Integrantes:
-Dilan Ferney Galeano Hoyos 
-Marco Antonio Vargas Garcia
-Andres Felipe Amaya Suarez
-Ingrith Yiseth Rodriguez Lopez
+Dilan Ferney Galeano Hoyos, 
+Marco Antonio Vargas Garcia, 
+Andres Felipe Amaya Suarez, 
+Ingrith Yiseth Rodriguez Lopez.
 
 ## 1.	Documentación de la API:
 
